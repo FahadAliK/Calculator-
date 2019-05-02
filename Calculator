@@ -1,0 +1,27 @@
+while True:
+    try:
+        num1 = float(input("Enter first number:"))
+        break
+    except:
+        print("ERROR!! Please enter a number.!")
+while True:
+    try:
+        num2 = float(input("Enter second number:"))
+        break
+    except:
+        print("ERROR!! Please enter a number.!")
+while True:
+    operator = input("Enter an operator(+,-,*,/): ")
+    if operator in ("+","-","*","/"):
+        break 
+if operator == "+":
+    print(num1," + ",num2," = ",num1 + num2)
+elif operator == "-":
+    print(num1," - ",num2," = ",num1 - num2)
+elif operator == "*":
+    print(num1," * ",num2," = ",num1 * num2)
+else:
+    try:
+        print(num1," / ",num2," = ",num1 / num2)
+    except:
+        print(num1," / ",num2," = infinity")
